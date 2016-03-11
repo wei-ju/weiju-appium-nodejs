@@ -1,8 +1,11 @@
 "use strict";
 
+var serverConfig = require("../../../app");
+
 var wd = require("wd");
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
+
 
 chai.use(chaiAsPromised);
 chai.should();
@@ -17,7 +20,7 @@ var desired = {
         app: "/Users/Diana/Library/Developer/Xcode/DerivedData/weiju-ios-gsmpxjcfvyjykybmhwwxquvgxkfh/Build/Products/Release-iphoneos/weiju-ios.app",
 };
 
-var browser = wd.promiseChainRemote("127.0.0.1", 4800);
+var browser = wd.promiseChainRemote(serverConfig);
 
 browser.init(desired).then(function() {
         return browser
