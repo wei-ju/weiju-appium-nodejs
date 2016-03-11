@@ -4,6 +4,8 @@ var wd = require("wd");
 var serverConfigs = require('./support_files/appium-config');
 
 var serverConfig = serverConfigs.local;
+var desired = require('./support_files/appium-devices').iOS9;
 
-module.exports = serverConfig;
+module.exports.desired = desired;
+module.exports.serverConfig = serverConfig;
 

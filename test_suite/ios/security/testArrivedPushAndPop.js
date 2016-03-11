@@ -1,24 +1,19 @@
 "use strict";
 
-var serverConfig = require("../../../app");
+var app = require("../../../app");
 
 var wd = require("wd");
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 
 
+var desired = app.desired;
+var serverConfig = app.serverConfig;
+
 chai.use(chaiAsPromised);
 chai.should();
 chaiAsPromised.transferPromiseness = wd.transferPromiseness;
 
-var desired = {
-        "appium-version": "1.0",
-        platformName: "iOS",
-        platformVersion: "9.2.1",
-        deviceName: "iPhone 6",
-        udid: "7a19e4740f1c24b14e52d51bd6d0c114427311a7",
-        app: "/Users/Diana/Library/Developer/Xcode/DerivedData/weiju-ios-gsmpxjcfvyjykybmhwwxquvgxkfh/Build/Products/Release-iphoneos/weiju-ios.app",
-};
 
 var browser = wd.promiseChainRemote(serverConfig);
 
