@@ -5,9 +5,6 @@
 	export SAUCE_ACCESS_KEY=your_access_key
 ```
 
-# Setup
-`pip install Appium-Python-Client sauceclient pytest pytest-xdist  # use sudo if necessary`
-
 # Running tests
-to run tests: `py.test -n 10`
+to run tests: `make`
 
