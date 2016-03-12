@@ -8,4 +8,5 @@ var desired = require('./support_files/appium-devices').iOS9;
 
 module.exports.desired = desired;
 module.exports.serverConfig = serverConfig;
+module.exports.configure = require('./support_files/appium-logging').configure();
 
