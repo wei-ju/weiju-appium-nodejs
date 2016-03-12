@@ -18,6 +18,7 @@ chaiAsPromised.transferPromiseness = wd.transferPromiseness;
 var browser = wd.promiseChainRemote(serverConfig);
 
 browser.init(desired).then(function() {
+    app.configure(browser);
         return browser
             .elementByXPath("//UIAApplication[1]/UIAWindow[1]/UIATableView[2]/UIATableCell[2]").click()
             .elementByName("icon navigationbar back").click()
