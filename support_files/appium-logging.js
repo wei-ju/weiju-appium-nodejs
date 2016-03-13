@@ -1,5 +1,7 @@
 "use strict";
 
+require('colors');
+
 exports.configure = function (driver) {
   // See whats going on
   driver.on('status', function (info) {

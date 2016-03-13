@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "wd": "~0.4.0",
+    "colors": "^1.0.3",
     "chai": "~3.5.0",
     "chai-as-promised": "~5.2.0"
   }
