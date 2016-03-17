@@ -20,6 +20,8 @@ var browser = wd.promiseChainRemote(serverConfig);
 
 
 describe("apartment list test", function() {
+    
+   this.timeout(300000);
 
    before(function () {
 
