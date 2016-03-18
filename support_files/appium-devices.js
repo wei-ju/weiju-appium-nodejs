@@ -27,6 +27,26 @@ exports.android18 = {
   app: undefined // will be set later
 };
 
+exports.android17 = {
+    "appium-version": "1.0",
+    platformName: "Android",
+    platformVersion: "4.2",
+    deviceName: "355BBJRVQQAC",
+    app: "",
+    "app-package": "com.evideo.weiju",
+    "app-activity": ".ui.activity.WelcomActivity"
+};
+
+exports.android22 = {
+    "appium-version": "1.0",
+    platformName: "Android",
+    platformVersion: "5.1",
+    deviceName: "02c4053d08e7f458",
+    app: "",
+    "app-package": "com.evideo.weiju",
+    "app-activity": ".ui.activity.WelcomActivity"
+};
+
 exports.android19 = {
   browserName: '',
   'appium-version': '1.3',
